@@ -38,7 +38,8 @@ It uses the Linux driver as a reference implementation but is written from scrat
 - macOS Big Sur  
 - macOS Catalina  
 - macOS Mojave
-
+- macOS High Sierra
+- 
 #### Notes:
 - Other systems are not tested yet.
 
