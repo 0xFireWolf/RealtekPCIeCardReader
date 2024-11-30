@@ -1,4 +1,4 @@
-name: RealtekCardReader-CI
+name: CI
 
 # Controls when the workflow will run
 on:
@@ -18,9 +18,9 @@ jobs:
         runs-on: macos-latest
         steps:
             # Checkout the card reader repo
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4.2.2
             # Checkout the MacKernelSDK repo
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4.2.2
               with:
                 repository: acidanthera/MacKernelSDK
                 path: MacKernelSDK
@@ -29,9 +29,9 @@ jobs:
             - run: xcodebuild -jobs 3 -configuration Release
             # Upload the driver
             - name: Upload to Artifacts
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4.4.3
               with:
-                name: Artifacts
+                name: RealtekCardReader
                 path: build/*/*.zip
 
     # Analyze the kext
@@ -40,9 +40,9 @@ jobs:
         runs-on: macos-latest
         steps:
             # Checkout the card reader repo
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4.2.2
             # Checkout the MacKernelSDK repo
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4.2.2
               with:
                 repository: acidanthera/MacKernelSDK
                 path: MacKernelSDK
