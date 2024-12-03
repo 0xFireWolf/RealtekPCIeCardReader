@@ -22,19 +22,24 @@ It uses the Linux driver as a reference implementation but is written from scrat
 - SD Express cards are not supported
 
 ## Current Status
-- **Last Updated:** Oct 25, 2022
+- **Last Updated:** Dec 3, 2024
 - **Reference:** [Linux Kernel 5.11](https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.tar.xz)
-- **Driver Status:** Pre-1.0 Beta (v0.9.7)
+- **Driver Status:** Pre-1.0 Beta (v0.9.8)
     - USB-based RTS5129, 5139 and 5179 card readers are now supported and should be working properly.
     - I/O performance and the overall driver stability are of the most concern at this moment.
 - **Known Issues:** [Link](Docs/KnownIssues.md)
 
 ## Supported Systems
+
+- macOS Sequoia
+- macOS Sonoma
+- macOS Ventura 
 - macOS Monterey
 - macOS Big Sur  
 - macOS Catalina  
 - macOS Mojave
-
+- macOS High Sierra
+- 
 #### Notes:
 - Other systems are not tested yet.
 

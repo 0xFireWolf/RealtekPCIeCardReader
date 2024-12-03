@@ -1,4 +1,6 @@
 #  Changelog
+#### v0.9.8 Beta
+- Added support for Ventura, Sonoma, Sequoia.
 
 #### v0.9.7 Beta
 - ~~Fixed an issue that the card is not mounted after the computer wakes up when sleeps with the card inserted.~~
